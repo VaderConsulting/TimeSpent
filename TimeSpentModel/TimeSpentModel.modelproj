@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75860cfa-cc7e-4ac4-a3b4-b07f75e53c8f}</ProjectGuid>
+    <TeamArchVersion>0.3.0.0</TeamArchVersion>
+    <Name>TimeSpentModle</Name>
+    <RootNamespace>TimeSpentModle</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\TeamArchitect\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Validate Include="TimeSpent.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>TimeSpent.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="TimeSpent.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TimeSpent.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="TimeSpent.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\TimeSpentModle.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TimeSpentLib\TimeSpentLib.csproj">
+      <Name>TimeSpentLib</Name>
+      <Project>{a76f81bf-a442-401d-8e7c-ed6d58ab99a3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeSpent\TimeSpent.csproj">
+      <Name>TimeSpent</Name>
+      <Project>{26ec01db-d892-4dfb-a566-f24e775fae90}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

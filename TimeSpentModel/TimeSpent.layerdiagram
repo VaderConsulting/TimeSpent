@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="0.3.0.0" Id="c4d0f7b0-d14f-4842-afaa-453e8dab6840" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="57e67fe3-282c-4fd8-ade5-44fec9bc4e05" name="Client Console Application">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="c5a4d087-a581-45ef-abd6-7a39db8aaf12" direction="Forward">
+          <layerMoniker Id="ae01e7ce-d97f-485c-8a1d-8a5ba1e6bb88" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="e496c530-f07e-469b-8b0a-4d690c6a31a9" name="Program.cs">
+          <ArtifactNode Label="Program.cs" Category="CodeSchema_ProjectItem" Id="(Assembly=../timespent/program.cs)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=../TimeSpent/bin/Debug/TimeSpent.exe Namespace=TimeSpent Type=Program)" Label="Program" Category="CodeSchema_Class">
+            <LinkCategory Ref="Contains" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="1f6c95f6-f64c-46b2-a081-07d90c410ffc" name="CmdLine.cs">
+          <ArtifactNode Label="CmdLine.cs" Category="CodeSchema_ProjectItem" Id="(Assembly=../TimeSpent/CmdLine.cs)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=../TimeSpent/bin/Debug/TimeSpent.exe Namespace=TimeSpent Type=CmdLine)" Label="CmdLine" Category="CodeSchema_Class">
+            <LinkCategory Ref="Contains" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="ae01e7ce-d97f-485c-8a1d-8a5ba1e6bb88" name="Web Service Library">
+      <references>
+        <reference Id="68a617b2-e5b5-4a99-943c-fcb088ffdd4f" name="ServerData.cs">
+          <ArtifactNode Label="ServerData.cs" Category="CodeSchema_ProjectItem" Id="(Assembly=../TimeSpentLib/ServerData.cs)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=../TimeSpentLib/bin/Debug/TimeSpentLib.dll Namespace=TimeSpentLib Type=CalendarItemData)" Label="CalendarItemData" Category="CodeSchema_Class">
+            <LinkCategory Ref="Contains" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Assembly=../TimeSpentLib/bin/Debug/TimeSpentLib.dll Namespace=TimeSpentLib Type=CalendarItemList)" Label="CalendarItemList" Category="CodeSchema_Class">
+            <LinkCategory Ref="Contains" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Assembly=../TimeSpentLib/bin/Debug/TimeSpentLib.dll Namespace=TimeSpentLib Type=ServerData)" Label="ServerData" Category="CodeSchema_Class">
+            <LinkCategory Ref="Contains" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>
