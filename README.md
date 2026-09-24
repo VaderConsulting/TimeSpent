@@ -1,6 +1,6 @@
 # TimeSpent
 
-TimeSpent is a C# console app that exports Exchange calendar appointments to CSV so you can review hours spent from Outlook. You pass `/start`, `/end`, `/mailpath` (EWS URL), optional `/domain` `/username` `/password`, `/version` (2007 through 2010_SP2), and `/out`; it FindItem-s the Calendar folder and writes Subject,Date,Start,End. `TimeSpentLib` wraps Exchange Web Services (`ExchangeServiceBinding` / EWS.dll) and scopes dates to W. Australia Standard Time. This tree is Dave Robinson's working copy of the Microsoft IT MSDN sample (archive.msdn.microsoft.com/timespent, MS-PL, copyright Microsoft IT 2009).
+TimeSpent is a C# console app that exports Exchange calendar appointments to CSV so you can review hours spent from Outlook. You pass `/start`, `/end`, `/mailpath` (EWS URL), optional `/domain` `/username` `/password`, `/version` (2007 through 2010_SP2), and `/out`; it FindItem-s the Calendar folder and writes Subject,Date,Start,End. `TimeSpentLib` wraps Exchange Web Services (`ExchangeServiceBinding` / EWS.dll) and scopes dates to W. Australia Standard Time. This tree is my working copy of the Microsoft IT MSDN sample (archive.msdn.microsoft.com/timespent, MS-PL, copyright Microsoft IT 2009).
 
 **Source last updated:** 2013-12-09 · **Language:** C# · **Target:** .NET Framework 4.0 (Client Profile on the console) · **Output:** console exe (`TimeSpent.exe`) + class library
 
@@ -22,7 +22,7 @@ Open `TimeSpent.sln` in Visual Studio Express 2013 for Windows Desktop (solution
 
 ## Attribution and provenance
 
-Working copy from Dave Robinson's OneDrive Historical Dev folder `TimeSpent`. Assembly title/product `TimeSpent` / `TimeSpentLib`, company Microsoft IT, copyright © Microsoft IT 2009. Source comments point at `http://archive.msdn.microsoft.com/timespent` and the MS-PL. Dave's copy adds credentialed EWS connect, Exchange 2010 family versions, and AWST timezone scoping. A usage-example EWS hostname in `CmdLine.cs` was replaced with `https://exchange.example/EWS/Exchange.asmx`. Debug start arguments that held a domain, username, and password are not in git (`*.user`); see the `.example` file.
+Working copy from my Historical Dev folder `TimeSpent`. Assembly title/product `TimeSpent` / `TimeSpentLib`, company Microsoft IT, copyright © Microsoft IT 2009. Source comments point at `http://archive.msdn.microsoft.com/timespent` and the MS-PL. Dave's copy adds credentialed EWS connect, Exchange 2010 family versions, and AWST timezone scoping. A usage-example EWS hostname in `CmdLine.cs` was replaced with `https://exchange.example/EWS/Exchange.asmx`. Debug start arguments that held a domain, username, and password are not in git (`*.user`); see the `.example` file.
 
 ## License
 
