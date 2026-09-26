@@ -22,8 +22,8 @@ Open `TimeSpent.sln` in Visual Studio Express 2013 for Windows Desktop (solution
 
 ## Attribution and provenance
 
-Working copy from my Historical Dev folder `TimeSpent`. Assembly title/product `TimeSpent` / `TimeSpentLib`, company Microsoft IT, copyright © Microsoft IT 2009. Source comments point at `http://archive.msdn.microsoft.com/timespent` and the MS-PL. Dave's copy adds credentialed EWS connect, Exchange 2010 family versions, and AWST timezone scoping. A usage-example EWS hostname in `CmdLine.cs` was replaced with `https://exchange.example/EWS/Exchange.asmx`. Debug start arguments that held a domain, username, and password are not in git (`*.user`); see the `.example` file.
+Working copy from my Historical Dev folder `TimeSpent`. Assembly title/product `TimeSpent` / `TimeSpentLib`, company Microsoft IT, copyright © Microsoft IT 2009. Source comments point at `http://archive.msdn.microsoft.com/timespent` and the MS-PL. My copy adds credentialed EWS connect, Exchange 2010 family versions, and AWST timezone scoping. A usage-example EWS hostname in `CmdLine.cs` was replaced with `https://exchange.example/EWS/Exchange.asmx`. Debug start arguments that held a domain, username, and password are not in git (`*.user`); see the `.example` file.
 
 ## License
 
-Original Microsoft Public License (MS-PL) terms apply to the Microsoft IT sample. See `LICENSE` and `THIRD_PARTY_NOTICES.md`. Dave Robinson's working-copy changes in this catalogue are also offered under MS-PL so the tree stays under one license. Exchange Web Services proxy types (`ExchangeWebServices`) and the EWS Managed API are Microsoft Exchange artifacts.
+Original Microsoft Public License (MS-PL) terms apply to the Microsoft IT sample. See `LICENSE` and `THIRD_PARTY_NOTICES.md`. My working-copy changes in this catalogue are also offered under MS-PL so the tree stays under one license. Exchange Web Services proxy types (`ExchangeWebServices`) and the EWS Managed API are Microsoft Exchange artifacts.
